@@ -11,6 +11,7 @@
             <link rel="stylesheet" href="assets/css/bootstrap.css">
             <link rel="stylesheet" href="assets/css/normalize.css">
             <link rel="stylesheet" href="assets/css/main.css">
-            <link rel="icon" href="favicon1.ico">   
+            <link rel="icon" href="favicon1.ico">
+             
         </head>
         <body>
