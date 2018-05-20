@@ -3,7 +3,7 @@
           <ul>
             <li>Legal Notice</li>
             <li>Privacy Policy</li>
-            <li>Copyright © CarDistrib</li>
+            <li>Copyright © School</li>
           </ul>
         </footer>
 <!-- end of the footer -->

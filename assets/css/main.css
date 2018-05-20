@@ -95,39 +95,156 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /*rules for the page index*/
+
+   header
+   {
+     background-color: #373737;
+     color: white;
+     padding: 14px;
+     font-size: 9px;
+     padding-left: 5%;
+     width: 100%;
+   }
+
+   header h1
+   {
+     font-size: 28px;
+   }
+
+   .connect
+   {
+     margin-right: 10%;
+     padding-top: 4em;
+     padding-bottom: 4em;
+   }
+
+   .connect input
+   {
+     width: 80%;
+     display: flex;
+     margin-top: 1em;
+     margin-left: 18%;
+     border: none;
+     font-size: 20px;
+     border-bottom : 2px solid #757575;
+     transition: width 2s;
+   }
+
+   .connect input:hover
+     {
+
+     color: #373737;
+     width: 50%;
+     border-bottom : 2px solid #FF5545;
+     }
+
+   .buttonConnect
+   {
+     color: white;
+     background-color: #757575;
+   }
+
+   .buttonConnect:hover , .linkRedirect:hover
+   {
+     background-color: #FF5545;
+     border : 2px solid #FF5545;
+   }
+
+   .account
+   {
+     margin-left: 45%;
+     width: 25%;
+   }
+
+   .registre
+   {
+     display: flex;
+     justify-content: flex-end;
+     margin-right: 5%;
+   }
+
+   .registre a
+   {
+     margin-top: 1em;
+     position:absolute;
+   }
+
+   .linkRedirect
+   {
+     background-color: #11313E;
+   }
+
+   .mdp
+   {
+     margin-left: 2%;
+     font-size: 12px;
+     color: #FF5545;
+   }
+
+   .mdp:hover
+   {
+     color: #FF5545;
+   }
+
+   footer
+   {
+     background-color: #373737;
+     color: white;
+     padding: 12px;
+     margin-top: 1em;
+   }
+
+   footer ul
+   {
+     display: flex;
+     justify-content: space-around;
+     font-size: 14px;
+     list-style-type: none;
+   }
+
+   /*end rules for the page index*/
 
 
-/* ##################################################################### */
-/* ##########################   SMARTPHONE   ########################### */
-/* ##################################################################### */
-/* Extra small devices (phones, less than 768px) */
+   @media (min-width: 768px) {
 
+     /*rules for the page index*/
 
+     header h1
+     {
+       font-size: 38px;
+     }
 
-/* ##################################################################### */
-/* ############################   TABLETS   ############################ */
-/* ##################################################################### */
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+     .connect
+     {
+       margin-left: 20%;
+       margin-right: 20%;
+       padding-top: 4em;
+       padding-bottom: 4em;
+     }
 
-}
+     .connect input
+     {
+       width: 70%;
+     }
 
-/* ##################################################################### */
-/* ############################   DESKTOPS   ########################### */
-/* ##################################################################### */
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+     .connect input:hover
+       {
+       width: 40%;
+       }
 
-}
+     .account
+     {
+       margin-left: 40%;
+     }
 
-/* ##################################################################### */
-/* ########################   LARGE DESKTOPS   ######################### */
-/* ##################################################################### */
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+     .mdp
+     {
+       font-size: 16px;
+     }
+     /*end rules for the page index*/
 
-}
-
+   }
 
 
 
