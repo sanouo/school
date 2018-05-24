@@ -11,7 +11,12 @@
             <link rel="stylesheet" href="assets/css/bootstrap.css">
             <link rel="stylesheet" href="assets/css/normalize.css">
             <link rel="stylesheet" href="assets/css/main.css">
+            <!-- test -->
+            <link rel="stylesheet" href="assets/css/log.css">
+            <!-- fin test -->
             <link rel="icon" href="favicon1.ico">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
 
         </head>
         <body>

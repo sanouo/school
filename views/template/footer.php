@@ -16,11 +16,21 @@
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
 
+
+
+
+
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+        <!-- test -->
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+          <script  src="assets/js/index.js"></script>
+       <!-- fin test  -->
+
     </body>
 </html>
