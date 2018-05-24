@@ -8,10 +8,13 @@
 
   <!-- start of the header -->
           <header>
-            <h1>مرحبا بكم</h1>
+            <h1>Follow-School</h1>
           </header>
   <!-- end of the headear -->
 
+  <div class="registre">
+  <a href="admin.php" class="linkRedirect btn btn-primary">Admin</a>
+  </div>
 
    <!-- start of the formulaire -->
            <form class="connect" action="" method="post">

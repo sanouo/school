@@ -127,9 +127,10 @@ textarea {
      margin-left: 18%;
      border: none;
      font-size: 20px;
-     border-bottom : 2px solid #757575;
+     border-bottom : 2px solid #373737;
      transition: width 2s;
    }
+
 
    .connect input:hover
      {
@@ -139,16 +140,28 @@ textarea {
      border-bottom : 2px solid #FF5545;
      }
 
+     .connectadmin input:hover
+       {
+       border-bottom : 2px solid #c3b076;
+       }
+
+
    .buttonConnect
    {
      color: white;
-     background-color: #757575;
+     background-color: #373737;
    }
 
    .buttonConnect:hover , .linkRedirect:hover
    {
      background-color: #FF5545;
      border : 2px solid #FF5545;
+   }
+
+   .buttonConnectAdmin:hover
+   {
+     background-color: #c3b076;
+     border : 2px solid #c3b076;
    }
 
    .account
@@ -172,7 +185,7 @@ textarea {
 
    .linkRedirect
    {
-     background-color: #11313E;
+     background-color: #373737;
    }
 
    .mdp
@@ -204,6 +217,11 @@ textarea {
    }
 
    /*end rules for the page index*/
+
+
+
+
+
 
 
    @media (min-width: 768px) {
