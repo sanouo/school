@@ -181,6 +181,7 @@ textarea {
    {
      margin-top: 1em;
      position:absolute;
+     border: solid 2px #373737;
    }
 
    .linkRedirect
@@ -218,11 +219,106 @@ textarea {
 
    /*end rules for the page index*/
 
+   /* start rules for the page homeadmin */
+.tableau
+{
+  width: 80%;
+  margin-left: 5%;
+  margin-top:3em;
+}
+
+.consultation
+{
+  display:flex;
+  justify-content:center;
+  margin-top:4em;
+  margin-bottom:3em;
+  flex-wrap:wrap;
+}
+
+.box
+{
+  background-color:#373737;
+  padding:2em;
+  width:65%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.box:hover
+{
+ text-decoration: none;
+ background-color: grey;
+}
+
+   /* end rules for the page homeadmin */
 
 
 
+/* start rules for the page home */
+.cardrota
+{
+  margin-top:1em;
+  text-align:center;
+  width:90%;
+  margin-left:4%;
+}
+/* end rules for the page home */
+
+/* start rules for the page search */
+.plus
+{
+  color:white;
+}
+
+.plus:hover
+{
+  color:grey;
+}
+
+.formstudent
+  {
+    margin-top: 5em;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+.buttonstudent
+{
+  background-color: #373737;
+  border : 2px solid #373737;
+}
+
+.buttonstudent:hover
+{
+  background-color: #FF5545;
+  border : 2px solid #FF5545;
+}
+
+/* end rules for the page search */
 
 
+@media (min-width: 600px) {
+
+/* start rules for the page home */
+.cardrota
+{
+  margin-top:1em;
+  text-align:center;
+  width:60%;
+  margin-left:19%;
+}
+/* end rules for the page home */
+
+/* end rules for the page homeadmin */
+.box
+     {
+       width:51%;
+       margin-top: 20px;
+     }
+     /* end rules for the page homeadmin */
+
+}
 
    @media (min-width: 768px) {
 
@@ -262,14 +358,55 @@ textarea {
      }
      /*end rules for the page index*/
 
+     /*start rules for the page homeadmin*/
+     .box
+    {
+      width:25%;
+      margin-top: 20px;
+      margin-left: 2%;
+    }
+    /*end rules for the page homeadmin*/
+
+    /*rules for the page sear*/
+        .formstudent
+        {
+          width: 60%;
+        }
+        /*end rules for the page search*/
+
    }
 
 
+   @media (min-width: 810px) {
 
+   /* start rules for the page home */
+   .cardrota
+   {
+     margin-top:1em;
+     text-align:center;
+     width:36%;
+     margin-left:32%;
+   }
+   /* end rules for the page home */
 
+   }
 
+   @media (min-width: 1040px) {
+   /*start rules for the page homeadmin*/
+   .box
+     {
+       width:22%;
+     }
+    /*end rules for the page homeadmin*/
 
+  /*start rules for the page search*/
 
+    .formstudent
+  {
+    width: 40%;
+  }
+  /*end rules for the page search*/
+}
 
 
 

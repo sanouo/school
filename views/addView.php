@@ -11,7 +11,7 @@
    ?>
 
  <div class="registre">
-   <a href="home.php" class="linkRedirect btn btn-primary">Back</a>
+   <a href="homeadmin.php" class="linkRedirect btn btn-primary">Back</a>
  </div>
 
 
@@ -20,75 +20,78 @@
 
 
 
-  <!-- start of the formulaire -->
-  <form class="formpiece" action="" method="post">
 
-    <div class="instruction">
-      <h4>Information Civil:</h4>
-    </div>
+<!-- Default form contact -->
+<form style="margin-top:4em; width:80%;">
+  <!--Header-->
+            <div class="modal-header primary-color white-text card" style="background-color:#f0ad4e;width:60%;margin-left:20%;">
+                <h4 class="title">
+                  <i class="material-icons">assignment</i>   Add Student</h4>
+            </div>
 
 
-   <div class="form-group">
-     <label for="formGroupExampleInput">nom</label>
-     <input type="text" class="form-control" style="border:none; border-bottom:2px solid black;"name="product" id="formGroupExampleInput">
+
+
+   <!-- Default input name -->
+   <label for="defaultFormContactNameEx" class="grey-text">Your name</label>
+   <input type="text" id="defaultFormContactNameEx" class="form-control">
+
+   <br>
+
+   <!-- Default input email -->
+   <label for="defaultFormContactEmailEx" class="grey-text">Your email</label>
+   <input type="email" id="defaultFormContactEmailEx" class="form-control">
+
+   <br>
+
+   <!-- Default input subject -->
+   <label for="defaultFormContactSubjectEx" class="grey-text">Subject</label>
+   <input type="text" id="defaultFormContactSubjectEx" class="form-control">
+
+   <br>
+
+   <!-- Default input subject -->
+   <label for="defaultFormContactSubjectEx" class="grey-text">Subject</label>
+   <input type="text" id="defaultFormContactSubjectEx" class="form-control">
+
+   <br>
+
+   <!-- Default input subject -->
+   <label for="defaultFormContactSubjectEx" class="grey-text">Subject</label>
+   <input type="text" id="defaultFormContactSubjectEx" class="form-control">
+
+   <br>
+
+   <!-- Default input subject -->
+   <label for="defaultFormContactSubjectEx" class="grey-text">Subject</label>
+   <input type="text" id="defaultFormContactSubjectEx" class="form-control">
+
+   <br>
+
+   <!-- Default input subject -->
+   <label for="defaultFormContactSubjectEx" class="grey-text">Subject</label>
+   <input type="text" id="defaultFormContactSubjectEx" class="form-control">
+
+   <br>
+
+   <!-- Default input subject -->
+   <label for="defaultFormContactSubjectEx" class="grey-text">Subject</label>
+   <input type="text" id="defaultFormContactSubjectEx" class="form-control">
+
+   <br>
+
+   <!-- Default textarea message -->
+   <label for="defaultFormContactMessageEx" class="grey-text">Your message</label>
+   <textarea type="text" id="defaultFormContactMessageEx" class="form-control" rows="3"></textarea>
+
+   <div class="text-center mt-4">
+       <button class="btn btn-outline-warning" type="submit">Send  <i class="material-icons">reply</i></button>
    </div>
-   <div class="form-group">
-     <label for="formGroupExampleInput2">prenom</label>
-     <input type="text" class="form-control"  name="order" id="formGroupExampleInput2">
-   </div>
-   <div class="form-group">
-     <label for="formGroupExampleInput2">section</label>
-     <input type="text" class="form-control"  name="order" id="formGroupExampleInput2">
-   </div>
-   <div class="form-group">
-     <label for="formGroupExampleInput2">telephone</label>
-     <input type="text" class="form-control"  name="order" id="formGroupExampleInput2">
-   </div>
-
-
-   <div class="instruction">
-     <h4>note:</h4>
-   </div>
-
-
-  <div class="form-group">
-    <label for="formGroupExampleInput">fr</label>
-    <input type="text" class="form-control" style="border:none; border-bottom:2px solid black;"name="product" id="formGroupExampleInput">
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput2">phy</label>
-    <input type="text" class="form-control"  name="order" id="formGroupExampleInput2">
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput2">math</label>
-    <input type="text" class="form-control"  name="order" id="formGroupExampleInput2">
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput2">anglais</label>
-    <input type="text" class="form-control"  name="order" id="formGroupExampleInput2">
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput2">eps</label>
-    <input type="text" class="form-control"  name="order" id="formGroupExampleInput2">
-  </div>
-
-
-  <div class="instruction">
-    <h4>Observations:</h4>
-  </div>
-
-  <div class="md-form">
-      <textarea type="text" id="textareaBasic" class="form-control md-textarea" rows="3"></textarea>
-      <label for="textareaBasic"></label>
-  </div>
 
 
 
-   <button type="submit" class="buttonpiece btn btn-primary mb-2">Search</button>
-  </form>
-  <!-- end of the formulaire -->
-  <p style="color:red; margin-left:5%; font-size:12px;">  <?php if (isset($message)) {
-   echo $message; } ?>  </p>
+</form>
+<!-- Default form contact -->
 
 
 
