@@ -51,23 +51,23 @@
 }
 
 .graph-bar1 {
-  background-color: purple;
+  background-color: #388e3c;
 
 }
 .graph-bar2 {
-  background-color: grey;
+  background-color: #ff7043;
 
 }
 .graph-bar3 {
-  background-color: green;
+  background-color: #3f51b5;
 
 }
 .graph-bar4 {
-  background-color: yellow;
+  background-color: #fbc02d;
 
 }
 .graph-bar5 {
-  background-color: red;
+  background-color: #ff3547;
 
 }
 
@@ -76,7 +76,7 @@
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background: #428D92;
+  background: #2e2e2e;
 }
 .graph-bar:last-child {
   margin-bottom: 0;

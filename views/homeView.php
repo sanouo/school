@@ -1,19 +1,15 @@
 <?php
-
-require("template/header.php");
-
+   require("template/header.php");
 ?>
 
  <div class="all" style="min-height:92vh;">
 
-   <?php
-
+<?php
    require("template/nav.php");
-
-   ?>
+?>
 
 <!-- start card rota -->
-<div class="cardrota" style="margin-top:1em;text-align:center;width:30%;margin-left:34%;">
+<div class="cardrota">
 
 
    <!--Rotating card-->
@@ -26,8 +22,6 @@ require("template/header.php");
                <!-- Image-->
                <div class="card-up" style="height:130px;background-color:#2e2e2e;">
                  <img src="assets/img/iconsaccount1.png" style="margin-top:30px;" alt="icon account">
-                <!-- <i class="material-icons" style="color:white;margin-top:50px;width:60px;">assignment</i> -->
-                   <!-- <img style="height:100%;" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg" class="img-fluid" alt="Image with a photo of clouds."> -->
                </div>
 
                <!--Content-->
@@ -50,8 +44,8 @@ require("template/header.php");
                    <!--Content-->
                    <h4>About me</h4>
                    <hr>
-                   <ul>
-                     <li><i class="material-icons" style="color:#CC0000;">contact_phone</i>0600000000</li>
+                   <ul style="list-style-type: none">
+                     <li><i class="material-icons" style="color:#CC0000;">contact_phone</i>       0600000000</li>
                      <li><i class="material-icons" style="color:#CC0000;">contact_mail</i></li>
                      <li><i class="material-icons" style="color:#CC0000;">business</i></li>
                      <li><i class="material-icons" style="color:#CC0000;">location_on</i></li>
@@ -103,7 +97,7 @@ require("template/header.php");
 
 
 <div class="wrap">
-<h2>Note :</h2>
+<h2 style="height:50px;">Notes :</h2>
 <div class="barGraph">
   <ul class="graph">
     <span class="graph-barBack">
@@ -153,7 +147,7 @@ require("template/header.php");
 <div class="Observation" style="margin-top:2em;margin-left:3%;margin-bottom:3em;">
 
 
-<h1>Observation :</h1>
+<h2 style="height:50px;">Observation :</h2>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>

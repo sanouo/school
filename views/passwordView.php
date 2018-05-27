@@ -7,7 +7,7 @@
  <div class="all" style="min-height:92vh;">
  <!-- start of the header -->
          <header>
-           <h1>مرحبا بكم</h1>
+           <h1>Follow-School</h1>
          </header>
  <!-- end of the headear -->
 
