@@ -297,6 +297,25 @@ textarea {
 
 /* end rules for the page search */
 
+/* start rules for the page add */
+.formadd
+{
+  margin-top:5em;
+  width:90%;
+  margin-left:4%;
+  margin-bottom: 2em;
+}
+
+.modal-header
+{
+  background-color:#f0ad4e;
+  width:95%;
+  margin-left:2%;
+  margin-bottom: 15px;
+}
+/* end rules for the page add */
+
+
 
 @media (min-width: 600px) {
 
@@ -317,6 +336,15 @@ textarea {
        margin-top: 20px;
      }
      /* end rules for the page homeadmin */
+
+     /* start rules for the page add */
+
+     .modal-header
+     {
+       width:70%;
+       margin-left:14%;
+     }
+     /* end rules for the page add */
 
 }
 
@@ -388,6 +416,20 @@ textarea {
      margin-left:32%;
    }
    /* end rules for the page home */
+
+   /* start rules for the page add */
+   .formadd
+   {
+     width:70%;
+     margin-left:14%;
+   }
+
+   .modal-header
+   {
+     width:60%;
+     margin-left:19%;
+   }
+   /* end rules for the page add */
 
    }
 
