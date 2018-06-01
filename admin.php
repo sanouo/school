@@ -1,4 +1,3 @@
 <?php
 
-// require("controllers/passwordControllers.php");
-require("views/adminView.php");
+require("controllers/adminControllers.php");

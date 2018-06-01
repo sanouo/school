@@ -29,6 +29,8 @@
                    <h4 style="margin-top:10px;">James Davies</h4>
                    <p>Web developer</p>
                    <p><i class="material-icons" style="color:#CC0000;">thumb_up</i>  Symfony</p>
+                   <!-- test -->
+                   <p><i class="material-icons" style="color:#CC0000;">thumb_up</i>  Symfony</p>
                    <p><i class="material-icons" style="color:#CC0000;">star_border</i>  Football</p>
                    <!--Triggering button-->
                    <a class="rotate-btn"  onclick="derriere()"><i class="material-icons" style="color:#007E33;">screen_rotation</i> rotate</a>
@@ -85,6 +87,25 @@
 
 </div>
 <!-- end card rota -->
+
+
+<!-- test -->
+
+      <?php foreach ($donnees as $key => $value){
+         ?>
+          <p><?php echo $value->getName(); ?></p>
+          <p><?php echo $value->getFirstname(); ?></p>
+          <p><?php echo $value->getAge(); ?></p>
+          <p><?php echo $value->getPhone(); ?></p>
+
+
+
+         <?php
+        }
+      ?>
+
+
+
 
 
 <hr style="width:70%;margin-left:14%;margin-top:1em;">

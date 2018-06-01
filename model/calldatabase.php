@@ -2,7 +2,7 @@
         try
         {
           // On se connecte à MySQL
-        $bdd = new PDO('mysql:host=localhost;dbname=cardistrib;charset=utf8', 'root', 'root');
+        $bdd = new PDO('mysql:host=localhost;dbname=school;charset=utf8', 'root', 'root');
         }
         catch (Exception $e)
         {

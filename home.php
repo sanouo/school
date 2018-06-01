@@ -1,4 +1,4 @@
 <?php
 
 
-require("Views/homeView.php");
+require("controllers/homeControllers.php");
