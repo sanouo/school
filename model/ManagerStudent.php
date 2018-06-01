@@ -17,26 +17,34 @@ class ManagerStudent{
 
 
 
-public function donneesstudent($product)
-// $refproduit : recuperer un objet a partir de $product
+// public function donneesstudent()
+//
+//  {
+//
+//    $nom = $_SESSION['user'];
+//
+//
+//    $q = $this->bdd->prepare('SELECT id, name, firstname, age, address FROM student WHERE name = '.$nom);
+//
+//    $donnees = $q->fetch(PDO::FETCH_ASSOC);
+//
+//
+//    return new Student($donnees);
+//
+//  }
+// Execute a SELECT request database
+    public function etudiant()
     {
-      $req = $this->bdd->prepare('SELECT  name, firstname
-         FROM student WHERE refproduit = :product');
-      $req->bindValue(':product', $product , PDO::PARAM_INT);
+         $nom = $_SESSION["user"];
+
+      $req = $this->bdd->prepare('SELECT * FROM student where name = "'.$nom.'"');
       $req->execute();
       $donnees = $req->fetchAll(PDO::FETCH_ASSOC);
-     //  $reponse = $bdd->query("SELECT refproduit, idcommande, transporteur, `statut commande`, `date commande`, `quantite produit`, `Nom produit`
- 		 // FROM v_commande WHERE refproduit = $reference ");
- 		 // $donnees = $reponse->fetch();
-      foreach ($donnees as $key => $value)
-      {
-        $donnees[$key] = new Student($value);
-
-      }
+      foreach ($donnees as $key => $value) {
+      $donnees[$key] = new Student($value);
+     }
       return $donnees;
-
     }
-
 
 
 

@@ -94,6 +94,11 @@
       <?php foreach ($donnees as $key => $value){
          ?>
           <p><?php echo $value->getName(); ?></p>
+          <p><?php echo $value->getFirstname(); ?></p>
+          <p><?php echo $value->getAge(); ?></p>
+          <p><?php echo $value->getPhone(); ?></p>
+
+
 
          <?php
         }

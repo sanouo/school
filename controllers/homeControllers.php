@@ -17,7 +17,8 @@ spl_autoload_register("loadClass");
 // create instanciation object $manager
 $manager = new ManagerStudent($bdd);
 
-$donnees = $manager->donneesstudent($_POST['product']);
+// $donnees = $manager->donneesstudent();
+$donnees= $manager->etudiant();
 
 
 
