@@ -119,7 +119,7 @@
 
    <!-- Default textarea message -->
    <label for="defaultFormContactMessageEx" class="grey-text">Observation</label>
-   <textarea type="text" id="defaultFormContactMessageEx" class="form-control" rows="3"></textarea>
+   <textarea type="text" id="defaultFormContactMessageEx" class="form-control" rows="5"></textarea>
 
    <div class="text-center mt-4">
        <button class="btn btn-outline-warning" type="submit">Send  <i class="material-icons">reply</i></button>

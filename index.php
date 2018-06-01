@@ -1,6 +1,6 @@
 <?php
 
-require("views/indexView.php")
+require("controllers/indexControllers.php")
 
 
  ?>
