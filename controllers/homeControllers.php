@@ -17,7 +17,7 @@ spl_autoload_register("loadClass");
 // create instanciation object $manager
 $manager = new ManagerStudent($bdd);
 
-// $donnees = $manager->donneesstudent();
+
 $donnees= $manager->etudiant();
 
 
@@ -25,11 +25,11 @@ $donnees= $manager->etudiant();
 
 
 
-// if ($_SESSION['connect'] == 1) {
+if ($_SESSION['connect'] == 1) {
 
 require("views/homeView.php");
-// }
+}
 
-// else {
-//  header("location:warning.php");
-// }
+else {
+ header("location:warning.php");
+}
