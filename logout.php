@@ -1,6 +1,6 @@
 <?php
 ini_set('display_errors','off');
-// pur redirect fonctionne 
+// pur redirect fonctionne
 
  ?>
 <script type="text/JavaScript">

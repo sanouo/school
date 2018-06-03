@@ -17,21 +17,7 @@ class ManagerStudent{
 
 
 
-// public function donneesstudent()
-//
-//  {
-//
-//    $nom = $_SESSION['user'];
-//
-//
-//    $q = $this->bdd->prepare('SELECT id, name, firstname, age, address FROM student WHERE name = '.$nom);
-//
-//    $donnees = $q->fetch(PDO::FETCH_ASSOC);
-//
-//
-//    return new Student($donnees);
-//
-//  }
+
 // Execute a SELECT request database
     public function etudiant()
     {

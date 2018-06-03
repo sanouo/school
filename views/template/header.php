@@ -15,6 +15,7 @@
             <link rel="stylesheet" href="assets/css/log.css">
             <!-- fin test -->
             <link rel="icon" href="favicon1.ico">
+            <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">    
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
 
