@@ -1,4 +1,4 @@
 <?php
 
 
-require("views/homeadminView.php");
+require("controllers/homeadminControllers.php");

@@ -37,12 +37,20 @@ require("template/header.php");
   </thead>
 
   <tbody>
+    
+    <?php foreach ($donnees as $key => $value){
+      ?>
   <tr>
-    <td style="color:#B22222;">teranga</td>
-    <td>senegal</td>
-    <td>lycee</td>
+    <td style="color:#B22222;"><?php echo $value->getName(); ?></td>
+    <td><?php echo $value->getFirstname(); ?></td>
+    <td><?php echo $value->getSection(); ?></td>
     <td><a class="plus" href="description.php"><i class="material-icons">add_circle</i></a></td>
   </tr>
+
+  <?php
+  }
+  ?>
+
 </tbody>
 
    </table>

@@ -1,4 +1,4 @@
 <?php
 
 
-require("Views/addView.php");
+require("controllers/addControllers.php");

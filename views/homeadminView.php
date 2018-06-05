@@ -19,7 +19,29 @@
     </tr>
   </thead>
 
+<!-- test -->
 
+  <!-- while ($donnees = $req->fetch())
+     { -->
+
+       <!-- fin test  -->
+       <?php foreach ($donnees as $key => $value)
+       {
+         ?>
+
+       <tbody>
+         <tr>
+           <td style="color:#B22222;"><?php echo $value->getName(); ?></td>
+           <td><?php echo $value->getFirstname(); ?></td>
+           <td><?php echo $value->getSection(); ?></td>
+           <td><a class="plus" href="description.php"><i class="material-icons">add_circle</i></a></td>
+
+         </tr>
+       </tbody>
+
+   <?php
+  }
+  ?>
 
    </table>
 
