@@ -34,4 +34,49 @@ class ManagerStudent{
 
 
 
+
+public function all()
+{
+
+
+  $req = $this->bdd->prepare('SELECT * FROM student ');
+  $req->execute();
+  $donnees = $req->fetchAll(PDO::FETCH_ASSOC);
+  foreach ($donnees as $key => $value) {
+  $donnees[$key] = new Student($value);
+ }
+  return $donnees;
+}
+
+// test function avec pagination 
+public function allstudent()
+{
+
+  if(isset($_GET['page'])){
+    $page = $_GET['page'];
+
+  }
+
+  else {
+    $page = 1;
+
+  }
+  $start = ($page - 1) * 5;
+
+$req = $this->bdd->prepare(" SELECT name, firstname,
+    section
+   FROM student
+
+   order by name
+   limit  5
+   offset $start
+   ");
+   $req->execute(array(
+   'start' => $start,
+     ));
+   // $resultat = $req->fetch();
+ }
+// fin test
+
+
 }

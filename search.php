@@ -1,4 +1,4 @@
 <?php
 
 
-require("Views/searchView.php");
+require("controllers/searchControllers.php");

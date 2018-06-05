@@ -35,7 +35,7 @@
 
    <!-- Default input name -->
    <label for="defaultFormContactNameEx" class="grey-text">Name</label>
-   <input type="text" id="defaultFormContactNameEx" class="form-control">
+   <input type="text" name="name" id="defaultFormContactNameEx" class="form-control">
 
    <br>
 
@@ -71,7 +71,7 @@
 
    <!-- Default input subject -->
    <label for="defaultFormContactSubjectEx" class="grey-text">City</label>
-   <input type="text" id="defaultFormContactSubjectEx" class="form-control">
+   <input type="text" name="city" id="defaultFormContactSubjectEx" class="form-control">
 
    <br>
 
