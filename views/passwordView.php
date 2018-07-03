@@ -2,8 +2,6 @@
   require("template/header.php");
  ?>
 
-
-
  <div class="all" style="min-height:92vh;">
  <!-- start of the header -->
          <header>
@@ -15,7 +13,6 @@
  <div class="registre">
  <a href="index.php" class="linkRedirect btn btn-primary">Back</a>
  </div>
-
 
  <!-- start of the formulaire -->
          <form class="connect" action="" method="post">
@@ -33,7 +30,6 @@
 </p>
 
 </div>
-
 
  <?php
    require("template/footer.php");

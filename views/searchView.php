@@ -7,6 +7,8 @@ require("template/header.php");
 
 <?php
   require("template/nav.php");
+
+ini_set('display_errors','off');  // pour cacher warning.
 ?>
 
 <div class="registre">
@@ -26,40 +28,35 @@ require("template/header.php");
  }  ?>  </p>
 
 
-<table class='table table-inverse table-responsive array tableau'>
-  <thead>
-    <tr>
-      <th style="color:#B22222;">Name</th>
-      <th>First Name</th>
-      <th>Section</th>
-      <th>Profile</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    
-    <?php foreach ($donnees as $key => $value){
-      ?>
-  <tr>
-    <td style="color:#B22222;"><?php echo $value->getName(); ?></td>
-    <td><?php echo $value->getFirstname(); ?></td>
-    <td><?php echo $value->getSection(); ?></td>
-    <td><a class="plus" href="description.php"><i class="material-icons">add_circle</i></a></td>
-  </tr>
-
-  <?php
+ <table class="table table-dark tableau" style="background-color:#292b2c;color:white;">
+   <thead>
+     <tr>
+       <th scope="col" style="color:#B22222;">Name</th>
+       <th scope="col">FirstName</th>
+       <!-- <th class="catergorysection" scope="col">Section</th> -->
+       <th class="catergoryage" scope="col">Age</th>
+       <th scope="col">Profile</th>
+     </tr>
+   </thead>
+   <?php foreach ($donnees as $key => $value)
+   {
+     ?>
+   <tbody>
+     <tr>
+       <th scope="row" style="color:#B22222;"><?php echo $value->getName(); ?></th>
+       <td><?php echo $value->getFirstname(); ?></td>
+       <!-- <td class="catergorysection"><?php echo $value->getSection(); ?></td> -->
+       <td class="catergoryage"><?php echo $value->getAge(); ?></td>
+       <td><a class="plus" href="description.php"><i class="material-icons">add_circle</i></a></td>
+     </tr>
+   </tbody>
+   <?php
   }
   ?>
-
-</tbody>
-
-   </table>
+ </table>
 
  </div>
 
-
    <?php
-
    require("template/footer.php");
-
    ?>

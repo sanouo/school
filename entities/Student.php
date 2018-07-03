@@ -10,7 +10,7 @@ class Student {
   protected $address;
   protected $city;
   protected $section;
-  protected $other;
+  protected $study;
   protected $mathematical;
   protected $french;
   protected $history;
@@ -97,9 +97,9 @@ class Student {
 
 
 
-    public function getOther()
+    public function getStudy()
     {
-        return $this->other;
+        return $this->study;
     }
 
 
@@ -217,9 +217,9 @@ class Student {
     }
 
 
-    public function setOther($other)
+    public function setStudy($study)
     {
-        $this->other = $other;
+        $this->study = $study;
 
         return $this;
     }

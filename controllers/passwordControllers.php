@@ -1,9 +1,6 @@
 <?php
   require("model/calldatabase.php");
 
-
-
-
 // CONDITION FOR UPDATE PASSWORD
   if(!empty($_POST['user']) AND !empty($_POST['pass']) AND !empty($_POST['city'])){
 
@@ -21,7 +18,6 @@
     {
     $message = "user or the city of birth does not match";
     }
-
 
 
   else {

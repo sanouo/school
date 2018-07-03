@@ -19,7 +19,16 @@ $manager = new ManagerAdd($bdd);
 
 
 // $donnees= $manager->addStudent();
-// $donnees= $manager->addStudentLogin();
+
+if (isset($_POST['newstudent'])) {
+
+  $donnees = new Student($_POST);
+
+  $donnees = $manager->addStudentLogin();
+
+
+}
+
 
 
 

@@ -1,15 +1,12 @@
 <?php
 session_start();
 
-
-
 require("model/calldatabase.php");
 require("model/ManagerSearch.php");
 // load all class
 function loadClass($class)
 {
   require("entities/" . $class . ".php");
-
 }
 spl_autoload_register("loadClass");
 
@@ -23,19 +20,17 @@ if (empty($_POST['namestudent'])) {
 
 else{
 
-        	if (isset($_POST['namestudent'])){
+      if (isset($_POST['namestudent'])){
 
-            $donnees = $manager->searchstudent($_POST['namestudent']);
+        $donnees = $manager->searchstudent($_POST['namestudent']);
 
-        			if(!empty($donnees) == false){
-                $message = "The name does not correspond to any student !";
+        if(!empty($donnees) == false){
+            $message = "The name does not correspond to any student !";
 
-        			}
-        			else{
-
-                  $_SESSION['namestudent']= $_POST['namestudent'];
-
-        			    }
+        	}
+        		else{
+              $_SESSION['namestudent']= $_POST['namestudent'];
+        			   }
 
         		} }
 
