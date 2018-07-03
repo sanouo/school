@@ -48,7 +48,7 @@ public function all()
   return $donnees;
 }
 
-// test function avec pagination 
+// test function avec pagination
 public function allstudent()
 {
 

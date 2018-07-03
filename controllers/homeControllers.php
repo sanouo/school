@@ -22,9 +22,6 @@ $donnees= $manager->etudiant();
 
 
 
-
-
-
 if ($_SESSION['connect'] == 1) {
 
 require("views/homeView.php");

@@ -35,15 +35,16 @@ public function addStudent($namestudent)
 
 
 
-    public function addStudentLogin()
+    public function addStudentLogin($test)
     // $refproduit : recuperer un objet a partir de $refprduit
         {
-          $q = $this->bdd->prepare('INSERT INTO login(user, city)');
- $q->bindValue(':name', $book->getName());
- $q->bindValue(':city', $book->getCity());
- $q->execute();
 
-        }
+  $q = $this->bdd->prepare('INSERT INTO student(name, firstname)
+  VALUES(:name, :firstname)');
+  $q->bindValue(':name', $test->getName());
+  $q->bindValue(':firstname', $test->getFirstname());
+  $q->execute();
+}
 
 
 }
