@@ -19,15 +19,13 @@ $manager = new ManagerAdd($bdd);
 
 // $donnees= $manager->addStudent();
 
-if (isset($_POST['newstudent'])) {
+if (isset($_POST['createaccount'])) {
 
-  $donnees = new Student($_POST);
+$donnees = new Student($_POST);
 
-$manager->addStudentLogin($donnees);
+$manager->addconnect($donnees);
 
-$_SESSION['newuser'] = $_POST['name'];
-
-header('location:addlogin.php');
+header('location:homeadmin.php');
 
 
 }
@@ -41,7 +39,7 @@ header('location:addlogin.php');
 
 if ($_SESSION['connect'] == 1) {
 
-require("views/addView.php");
+require("views/addloginView.php");
 }
 
 else {

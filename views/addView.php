@@ -22,7 +22,7 @@
 
 
 <!-- Default form contact -->
-<form class="formadd" action="" method="post">
+<form class="formadd card" action="" method="post">
   <!--Header-->
             <div class="modal-header primary-color white-text card">
                 <h4 class="title">
@@ -102,8 +102,8 @@
    <br>
 
    <!-- input  -->
-   <label for="defaultFormContactSubjectEx" class="grey-text">Other</label>
-   <input type="text" name="other" id="defaultFormContactSubjectEx" class="form-control">
+   <label for="defaultFormContactSubjectEx" class="grey-text">Study</label>
+   <input type="text" name="study" id="defaultFormContactSubjectEx" class="form-control">
 
    <br>
 
@@ -149,7 +149,6 @@
 
 </form>
 <!-- Default form contact -->
-
 
 
 
