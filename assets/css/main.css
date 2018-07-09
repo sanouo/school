@@ -308,7 +308,7 @@ textarea {
 
 .plus:hover
 {
-  color:grey;
+  color:#CC0000;
 }
 
 .formstudent
@@ -335,20 +335,82 @@ textarea {
 /* start rules for the page add */
 .formadd
 {
-  margin-top:5em;
+  margin-top:7em;
   width:90%;
   margin-left:4%;
   margin-bottom: 2em;
+  padding: 15px;
 }
 
 .modal-header
 {
   background-color:#f0ad4e;
-  width:95%;
-  margin-left:2%;
-  margin-bottom: 15px;
+  width:90%;
+  margin-left:4%;
+  margin-top:-3em;
+  margin-bottom: 5px;
+  padding: 1em;
 }
 /* end rules for the page add */
+
+/* rules for the page description */
+.cardnotes
+{
+  width: 80%;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  margin-right:5%;
+}
+
+.cardhead
+{
+  background-color:#373737;
+  color: white;
+  text-align:center;
+  width:110%;
+  padding: 1em;
+}
+
+.cardbody
+{
+  padding-top: 13px;
+  margin-left: 10%;
+  margin-top:-1em;
+}
+
+.cardobservation
+{
+  width: 80%;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  margin-right: 5%;
+}
+
+.cardhead1
+{
+  background-color:#373737;
+  color: white;
+  text-align:center;
+  width:110%;
+  padding: 1em;
+}
+
+.cardbody1
+{
+  padding-top: 13px;
+  margin-left: 10%;
+  margin-top:-1em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.twocard
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* end rules for the page description */
 
 
 
@@ -395,10 +457,23 @@ textarea {
 
      .modal-header
      {
-       width:70%;
-       margin-left:14%;
+       width:60%;
+       margin-left:19%;
      }
      /* end rules for the page add */
+
+     /* rules for the page description */
+     .cardnotes
+     {
+       width: 45%;
+     }
+
+     .cardobservation
+     {
+       width: 42%;
+     }
+
+     /* end rules for the page description */
 
 }
 
@@ -462,6 +537,20 @@ textarea {
         }
         /*end rules for the page search*/
 
+        /* rules for the page description */
+        .cardnotes
+        {
+          width: 40%;
+        }
+
+        .cardobservation
+        {
+          width: 40%;
+        }
+
+        /* end rules for the page description */
+
+
    }
 
 
@@ -486,8 +575,8 @@ textarea {
 
    .modal-header
    {
-     width:60%;
-     margin-left:19%;
+     width:50%;
+     margin-left:24%;
    }
    /* end rules for the page add */
 
@@ -509,6 +598,19 @@ textarea {
     width: 40%;
   }
   /*end rules for the page search*/
+
+  /* rules for the page description */
+  .cardnotes
+  {
+    width: 30%;
+  }
+
+  .cardobservation
+  {
+    width: 30%;
+  }
+
+  /* end rules for the page description */
 }
 
 

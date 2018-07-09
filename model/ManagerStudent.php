@@ -79,4 +79,28 @@ $req = $this->bdd->prepare(" SELECT name, firstname,
 // fin test
 
 
+
+// Execute a SELECT request in database where id
+ public function gettest()
+ {
+   if(isset($_GET['id'])){
+   // $id = (int) $id;
+   $id = $_GET['id'];
+   $q = $this->bdd->query('SELECT * FROM student WHERE id = '.$id);
+   $donnees = $q->fetch(PDO::FETCH_ASSOC);
+   return new Student($donnees);
+  //  $id = (int) $id;
+  //  $req = $this->bdd->prepare('SELECT * FROM student WHERE id = '.$id);
+  //  $req->execute();
+  //  $donnees = $req->fetchAll(PDO::FETCH_ASSOC);
+  //  foreach ($donnees as $key => $value) {
+  //  $donnees[$key] = new ManagerStudent($value);
+  // }
+  //  return $donnees;
+  // echo $_GET['id'];
+
+}
+ }
+
+
 }

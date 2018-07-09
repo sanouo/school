@@ -38,13 +38,14 @@
       <td><?php echo $value->getFirstname(); ?></td>
       <!-- <td class="catergorysection"><?php echo $value->getSection(); ?></td> -->
       <td class="catergoryage"><?php echo $value->getAge(); ?></td>
-      <td><a class="plus" href="description.php"><i class="material-icons">add_circle</i></a></td>
+      <td><a class="plus" href="description.php?id=<?php echo $value->getId();?>"><i class="material-icons">add_circle</i></a></td>
     </tr>
   </tbody>
   <?php
  }
  ?>
 </table>
+
 
 
    <div class="consultation">

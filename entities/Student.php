@@ -44,6 +44,25 @@ class Student {
         return $this->name;
     }
 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    public function getBirthcity()
+    {
+        return $this->birthcity;
+    }
 
 
     public function getFirstname()
@@ -160,6 +179,36 @@ class Student {
 
         return $this;
     }
+
+    public function setId($id)
+    {
+        $this->id = $id;
+
+        return $this;
+    }
+
+    public function setUser($user)
+    {
+        $this->user = $user;
+
+        return $this;
+    }
+
+    public function setPassword($password)
+    {
+        $this->password = md5($password);
+
+        return $this;
+    }
+
+    public function setBirthcity($birthcity)
+    {
+        $this->birthcity = md5($birthcity);
+
+        return $this;
+    }
+
+
 
 
     public function setFirstname($firstname)
