@@ -174,12 +174,18 @@ if(isset($donnees)){
 
 
 
-<?php
-} ?>
 
-<button type="button" class="btn btn-danger" style="margin-left:8%;margin-top:1em;margin-bottom:2em;">Delete account</button>
+
+ <a href="deleteaccount.php?remove=<?php echo $donnees->getId();?>"  onclick="return(confirm('Are you sure you want to delete this account?'));">
+ <button type="button" class="btn btn-danger" style="margin-left:8%;margin-top:1em;margin-bottom:2em;">Delete account</button>
+ </a>
+
+ <?php
+ } ?>
 
 </div>
+
+
 
 <?php
 

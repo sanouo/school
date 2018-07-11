@@ -102,5 +102,17 @@ $req = $this->bdd->prepare(" SELECT name, firstname,
 }
  }
 
+ public function removeaccount()
+ {
+if(isset($_GET['remove'])){
+
+ $remove = $_GET['remove'];
+   $req = $this->bdd->exec('DELETE FROM student WHERE id = '.$remove);
+
+   // header('Location: homeadmin.php');
+
+}
+}
+
 
 }
