@@ -45,7 +45,49 @@ if(isset($donnees)){
 
                   <hr style="width:80%;margin-left:9%;">
 
-                  <a><i class="material-icons" style="color:#007E33;">update</i> update</a>
+                  <a data-toggle="modal" data-target="#exampleModal3" data-whatever="@mdo"><i class="material-icons" style="color:#007E33;">update</i> update</a>
+              <!-- Modal -->
+                  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Update</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Name:</label>
+                              <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getName(); ?>">
+                            </div>
+                            <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">First Name:</label>
+                              <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getFirstname(); ?>">
+                            </div>
+                            <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Age:</label>
+                              <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getAge(); ?>">
+                            </div>
+                            <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Section:</label>
+                              <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getSection(); ?>">
+                            </div>
+                            <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Study:</label>
+                              <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getStudy(); ?>">
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END Modal -->
 
 
                </div>
@@ -91,7 +133,45 @@ if(isset($donnees)){
 
                    <hr style="width:80%;margin-left:9%;">
 
-                   <a><i class="material-icons" style="color:#007E33;">update</i> update</a>
+                   <a data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo"><i class="material-icons" style="color:#007E33;">update</i> update</a>
+               <!-- Modal -->
+                   <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog" role="document">
+                       <div class="modal-content">
+                         <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLabel">Update</h5>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                             <span aria-hidden="true">&times;</span>
+                           </button>
+                         </div>
+                         <div class="modal-body">
+                           <form>
+                             <div class="form-group">
+                               <label for="recipient-name" class="col-form-label">Phone:</label>
+                               <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getPhone(); ?>">
+                             </div>
+                             <div class="form-group">
+                               <label for="recipient-name" class="col-form-label">Email:</label>
+                               <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getEmail(); ?>">
+                             </div>
+                             <div class="form-group">
+                               <label for="recipient-name" class="col-form-label">Address:</label>
+                               <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getAddress(); ?>">
+                             </div>
+                             <div class="form-group">
+                               <label for="recipient-name" class="col-form-label">City:</label>
+                               <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getCity(); ?>">
+                             </div>
+                           </form>
+                         </div>
+                         <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-primary">Submit</button>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   <!-- END Modal -->
 
                </div>
            </div>
@@ -132,7 +212,49 @@ if(isset($donnees)){
 
     <hr style="width:80%;margin-left:9%;">
 
-    <a><i class="material-icons" style="color:#007E33;">update</i> update</a>
+    <a data-toggle="modal" data-target="#exampleModal1" data-whatever="@mdo"><i class="material-icons" style="color:#007E33;">update</i> update</a>
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Update</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Mathematical:</label>
+                <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getMathematical(); ?>">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">French:</label>
+                <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getFrench(); ?>">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">History:</label>
+                <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getHistory(); ?>">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">English:</label>
+                <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getEnglish(); ?>">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Physical:</label>
+                <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getPhysical(); ?>">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END Modal -->
 
 
   </div>
@@ -161,7 +283,35 @@ if(isset($donnees)){
 
     <hr style="width:80%;margin-left:9%;">
 
-    <a><i class="material-icons" style="color:#007E33;">update</i> update</a>
+    <a data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="material-icons" style="color:#007E33;">update</i> update</a>
+<!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Update</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post">
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Observation:</label>
+                <input type="text" class="form-control" id="recipient-name" name="observation" value="<?php echo $donnees->getObservation(); ?>">
+              </div>
+            <!-- </form> -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button  class="btn btn-primary" name="newsupdate" type="submit">Submit</button>
+          </div>
+        </form>
+
+        </div>
+      </div>
+    </div>
+    <!-- END Modal -->
 
 
   </div>
@@ -173,15 +323,15 @@ if(isset($donnees)){
 </div>
 
 
-
-
-
- <a href="deleteaccount.php?remove=<?php echo $donnees->getId();?>"  onclick="return(confirm('Are you sure you want to delete this account?'));">
+ <a href="deleteaccount.php?remove=<?php echo $donnees->getId();?>&removelog=<?php echo $donnees->getName();?>"  onclick="return(confirm('Are you sure you want to delete this account?'));">
  <button type="button" class="btn btn-danger" style="margin-left:8%;margin-top:1em;margin-bottom:2em;">Delete account</button>
  </a>
 
  <?php
  } ?>
+
+
+
 
 </div>
 

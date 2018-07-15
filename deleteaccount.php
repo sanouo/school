@@ -22,12 +22,14 @@ spl_autoload_register("loadClass");
   // create instanciation object $manager
   $manager = new ManagerStudent($bdd);
 
-  $donnees= $manager->removeaccount();
 
-  // header('Location: homeadmin.php');
+  // $donnees= $manager->removeaccount();
+
+  $donnees= $manager->removelogin();
+
 
       ?>
 
-      <script type="text/JavaScript">
+      <!-- <script type="text/JavaScript">
               window.location = 'homeadmin.php';
-       </script>
+       </script> -->
