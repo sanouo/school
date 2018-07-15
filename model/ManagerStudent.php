@@ -107,12 +107,34 @@ $req = $this->bdd->prepare(" SELECT name, firstname,
 if(isset($_GET['remove'])){
 
  $remove = $_GET['remove'];
-   $req = $this->bdd->exec('DELETE FROM student WHERE id = '.$remove);
+ $req = $this->bdd->exec('DELETE FROM student WHERE id = '.$remove);
 
    // header('Location: homeadmin.php');
 
 }
 }
 
+public function removelogin()
+{
+if(isset($_GET['removelog'])){
+
+$removelog = $_GET['removelog'];
+$req = $this->bdd->exec('DELETE FROM login WHERE = '.$removelog);
+
+}
+}
+
+
+
+// Execute a UPDATE request database
+  public function getUpdate($update)
+    {
+      $id = $_GET['id'];
+
+      $q=$this->bdd->prepare('UPDATE student SET observation = :observation WHERE id = '.$id);
+      // $q->bindValue(':id', $update->getId());
+      $q->bindValue(':observation', $update->getObservation());
+      $q->execute();
+     }
 
 }

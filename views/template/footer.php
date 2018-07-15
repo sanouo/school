@@ -18,8 +18,6 @@
 
 
 
-
-
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
@@ -30,7 +28,10 @@
         <!-- test -->
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
           <script  src="assets/js/index.js"></script>
+          <script src="assets/js/bootstrap.js"></script>
+          
        <!-- fin test  -->
+
 
     </body>
 </html>

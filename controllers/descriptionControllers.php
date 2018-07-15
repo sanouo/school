@@ -21,6 +21,18 @@ $manager = new ManagerStudent($bdd);
 $donnees= $manager->gettest();
 
 
+if (isset($_POST['newsupdate'])) {
+
+  $donnees = new Student($_POST);
+
+$manager->getUpdate($donnees);
+
+$donnees= $manager->gettest();
+
+
+}
+
+
 // $donnees= $manager->gettest();
 // call function get for select elements where id
 // $detail = $manager->gettest($_GET['id']);
