@@ -137,4 +137,48 @@ $req = $this->bdd->exec('DELETE FROM login WHERE = '.$removelog);
       $q->execute();
      }
 
+     public function getUpdateNote($update)
+       {
+         $id = $_GET['id'];
+
+         $q=$this->bdd->prepare('UPDATE student SET mathematical = :mathematical , french = :french ,history = :history ,english = :english , physical = :physical  WHERE id = '.$id);
+         // $q->bindValue(':id', $update->getId());
+         $q->bindValue(':mathematical', $update->getMathematical());
+         $q->bindValue(':french', $update->getFrench());
+         $q->bindValue(':history', $update->getHistory());
+         $q->bindValue(':english', $update->getEnglish());
+         $q->bindValue(':physical', $update->getPhysical());
+
+         $q->execute();
+        }
+
+        public function getUpdatestatus($update)
+          {
+            $id = $_GET['id'];
+
+            $q=$this->bdd->prepare('UPDATE student SET phone = :phone , email = :email , address = :address , city = :city  WHERE id = '.$id);
+            // $q->bindValue(':id', $update->getId());
+            $q->bindValue(':phone', $update->getPhone());
+            $q->bindValue(':email', $update->getEmail());
+            $q->bindValue(':address', $update->getAddress());
+            $q->bindValue(':city', $update->getCity());
+
+            $q->execute();
+           }
+
+           public function getUpdatestatus2($update)
+             {
+               $id = $_GET['id'];
+
+               $q=$this->bdd->prepare('UPDATE student SET name = :name , firstname = :firstname , age = :age , section = :section, study = :study  WHERE id = '.$id);
+               // $q->bindValue(':id', $update->getId());
+               $q->bindValue(':name', $update->getName());
+               $q->bindValue(':firstname', $update->getFirstname());
+               $q->bindValue(':age', $update->getAge());
+               $q->bindValue(':section', $update->getSection());
+               $q->bindValue(':study', $update->getStudy());
+
+               $q->execute();
+              }
+
 }

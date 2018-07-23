@@ -57,33 +57,35 @@ if(isset($donnees)){
                           </button>
                         </div>
                         <div class="modal-body">
-                          <form>
+                          <form action="" method="post">
                             <div class="form-group">
                               <label for="recipient-name" class="col-form-label">Name:</label>
-                              <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getName(); ?>">
+                              <input type="text" class="form-control" id="recipient-name" name="name" value="<?php echo $donnees->getName(); ?>">
                             </div>
                             <div class="form-group">
                               <label for="recipient-name" class="col-form-label">First Name:</label>
-                              <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getFirstname(); ?>">
+                              <input type="text" class="form-control" id="recipient-name" name="firstname" value="<?php echo $donnees->getFirstname(); ?>">
                             </div>
                             <div class="form-group">
                               <label for="recipient-name" class="col-form-label">Age:</label>
-                              <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getAge(); ?>">
+                              <input type="text" class="form-control" id="recipient-name" name="age" value="<?php echo $donnees->getAge(); ?>">
                             </div>
                             <div class="form-group">
                               <label for="recipient-name" class="col-form-label">Section:</label>
-                              <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getSection(); ?>">
+                              <input type="text" class="form-control" id="recipient-name" name="section" value="<?php echo $donnees->getSection(); ?>">
                             </div>
                             <div class="form-group">
                               <label for="recipient-name" class="col-form-label">Study:</label>
-                              <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getStudy(); ?>">
+                              <input type="text" class="form-control" id="recipient-name" name="study" value="<?php echo $donnees->getStudy(); ?>">
                             </div>
-                          </form>
+
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Submit</button>
+                          <button type="submit" name="updatestatus2" class="btn btn-primary">Submit</button>
                         </div>
+                      </form>
+
                       </div>
                     </div>
                   </div>
@@ -145,29 +147,30 @@ if(isset($donnees)){
                            </button>
                          </div>
                          <div class="modal-body">
-                           <form>
+                           <form action="" method="post">
                              <div class="form-group">
                                <label for="recipient-name" class="col-form-label">Phone:</label>
-                               <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getPhone(); ?>">
+                               <input type="text" class="form-control" id="recipient-name" name="phone" value="<?php echo $donnees->getPhone(); ?>">
                              </div>
                              <div class="form-group">
                                <label for="recipient-name" class="col-form-label">Email:</label>
-                               <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getEmail(); ?>">
+                               <input type="text" class="form-control" id="recipient-name" name="email" value="<?php echo $donnees->getEmail(); ?>">
                              </div>
                              <div class="form-group">
                                <label for="recipient-name" class="col-form-label">Address:</label>
-                               <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getAddress(); ?>">
+                               <input type="text" class="form-control" id="recipient-name" name="address" value="<?php echo $donnees->getAddress(); ?>">
                              </div>
                              <div class="form-group">
                                <label for="recipient-name" class="col-form-label">City:</label>
-                               <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getCity(); ?>">
+                               <input type="text" class="form-control" id="recipient-name" name="city" value="<?php echo $donnees->getCity(); ?>">
                              </div>
-                           </form>
+
                          </div>
                          <div class="modal-footer">
                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                           <button type="button" class="btn btn-primary">Submit</button>
+                           <button type="submit" name="updatestatus"class="btn btn-primary">Submit</button>
                          </div>
+                         </form>
                        </div>
                      </div>
                    </div>
@@ -224,33 +227,35 @@ if(isset($donnees)){
             </button>
           </div>
           <div class="modal-body">
-            <form>
+            <form action="" method="post">
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Mathematical:</label>
-                <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getMathematical(); ?>">
+                <input type="text" class="form-control" id="recipient-name" name="mathematical" value="<?php echo $donnees->getMathematical(); ?>">
               </div>
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">French:</label>
-                <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getFrench(); ?>">
+                <input type="text" class="form-control" id="recipient-name" name="french" value="<?php echo $donnees->getFrench(); ?>">
               </div>
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">History:</label>
-                <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getHistory(); ?>">
+                <input type="text" class="form-control" id="recipient-name" name="history" value="<?php echo $donnees->getHistory(); ?>">
               </div>
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">English:</label>
-                <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getEnglish(); ?>">
+                <input type="text" class="form-control" id="recipient-name" name="english" value="<?php echo $donnees->getEnglish(); ?>">
               </div>
               <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Physical:</label>
-                <input type="text" class="form-control" id="recipient-name" value="<?php echo $donnees->getPhysical(); ?>">
+                <input type="text" class="form-control" id="recipient-name" name="physical" value="<?php echo $donnees->getPhysical(); ?>">
               </div>
-            </form>
+
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Submit</button>
+            <button  class="btn btn-primary" name="updatenote" type="submit">Submit</button>
           </div>
+        </form>
+
         </div>
       </div>
     </div>
@@ -262,6 +267,7 @@ if(isset($donnees)){
 
 </div>
 <!-- Card -->
+
 
 
 <!-- Card -->

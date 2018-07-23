@@ -22,16 +22,42 @@ $donnees= $manager->gettest();
 
 
 if (isset($_POST['newsupdate'])) {
-
   $donnees = new Student($_POST);
 
 $manager->getUpdate($donnees);
 
 $donnees= $manager->gettest();
 
+}
+
+
+if (isset($_POST['updatenote'])) {
+  $donnees = new Student($_POST);
+
+$manager->getUpdateNote($donnees);
+
+$donnees= $manager->gettest();
 
 }
 
+
+if (isset($_POST['updatestatus'])) {
+  $donnees = new Student($_POST);
+
+$manager->getUpdatestatus($donnees);
+
+$donnees= $manager->gettest();
+
+}
+
+if (isset($_POST['updatestatus2'])) {
+  $donnees = new Student($_POST);
+
+$manager->getUpdatestatus2($donnees);
+
+$donnees= $manager->gettest();
+
+}
 
 // $donnees= $manager->gettest();
 // call function get for select elements where id
